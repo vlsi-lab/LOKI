@@ -1,0 +1,4 @@
+[submodule "pulp_soc"]
+	path = pulp_soc
+	url = https://github.com/vlsi-lab/pulp_soc.git
+	branch = pulp_soc_LOKI
