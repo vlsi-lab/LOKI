@@ -6,3 +6,7 @@
 	path = pulp-runtime
 	url = https://github.com/vlsi-lab/pulp-runtime.git
 	branch = pulp-runtime_loki
+[submodule "pulpissimo"]
+	path = pulpissimo
+	url = https://github.com/vlsi-lab/pulpissimo.git
+	branch = pulpissimo_LOKI
