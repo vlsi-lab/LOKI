@@ -1,14 +1,20 @@
 # LOKI 
 ## Low-latency Open-source Kyber-accelerator IPs
 
+CRYSTALS-Kyber is a lattice-based key encapsulation mechanism (KEM) recognized as one of the finalist algorithms in NIST's post-quantum cryptography (PQC) standardization process. Polynomial multiplications and hash functions, as essential operations in lattice-based PQC schemes, pose a significant time consumption challenge with respect to nowadays cryptographic protocols. This work addresses these computational efforts by incorporating LOKI, an accelerator, into a RISC-V microcontroller.
+By leveraging the accelerator, the performance can be enhanced, contributing to the overall efficiency of Kyber in the fundamental tasks of key generation, encryption, and decryption operations. Through empirical evaluations and benchmarking, the effectiveness and practicality of the proposed hardware architectures are demonstrated, highlighting their potential to advance the field of post-quantum cryptography. 
+
 # Introduction
 
-In the **LOKI** repository you can find an example of a post-quantum crytpographic (PQC) hardware accelerator for pulpissimo. 
+In the **LOKI** repository you can find an example of a post-quantum cryptographic (PQC) hardware accelerator for PULPissimo. 
 If you are using this accelerator, please refer to:
 
 > Alessandra Dolmeta, Mattia Mirigaldi, Maurizio Martina, and Guido Masera. 2023. Implementation and integration of Keccak accelerator on RISC-V for CRYSTALS-Kyber. In Proceedings of the 20th ACM International Conference on Computing Frontiers (CF '23). Association for Computing Machinery, New York, NY, USA, 381–382. https://doi.org/10.1145/3587135.3591432
+
+Or:
 > Alessandra Dolmeta, Mattia Mirigaldi, Maurizio Martina, and Guido Masera. 2023. LOKI Low-latency Open-source Kyber-accelerator IPs. 
 
+Which still need to be published, but has been accepted to ApplePies2023 (International Conference on Applications in Electronics Pervading Industry, Environment and Society).
 
 # Getting started
 The RISC-V PULPissimo microcontroller (Figure - I) from the open-source [PULP platform](https://github.com/pulp-platform) project is used and configured to work with the 4-stage pipeline core RI5CY. Then, Keccak algorithm is compiled using [PULP toolchain](https://github.com/pulp-platform/pulp-riscv-gnu-toolchain), setting the optimization flag '-O3' and increasing the
