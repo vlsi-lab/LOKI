@@ -1,0 +1,159 @@
+# source /home/alessandra.dolmeta/pqc_riscv/pulpissimo/sim/tcl_files/config/run_and_exit.tcl
+# source /home/alessandra.dolmeta/pqc_riscv/pulpissimo/sim/tcl_files/run.tcl
+# vsim -c -quiet vopt_tb -t ps "+nowarnTRAN" "+nowarnTSCALE" "+nowarnTFMPC" -suppress 8386 "+UVM_NO_RELNOTES" "+ENTRY_POINT=0x1c008080" -permit_unmatched_virtual_intf -gBAUDRATE=115200 -gLOAD_L2=JTAG 
+# Start time: 16:07:08 on Jun 28,2023
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# ** Warning: (vsim-3770) Failed to find user specified function 'jtag_tick' in DPI precompiled library search list "/eda/mentor/2020-21/RHELx86/QUESTA-CORE-PRIME_2020.4/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so ".
+#    Time: 0 ps  Iteration: 0  Region: /SimJTAG_sv_unit File: /home/alessandra.dolmeta/pqc_riscv/pulpissimo/rtl/tb/SimJTAG.sv
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_soc/i_FLL_digital/TQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_soc/i_FLL_digital/JTQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_per/i_FLL_digital/TQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_per/i_FLL_digital/JTQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_cluster/i_FLL_digital/TQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_cluster/i_FLL_digital/JTQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-3040) Command line generic/parameter "LOAD_L2" not found in design.
+#  run_and_exit
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# ** Warning: (vsim-7) Failed to open readmem file "/../rtl/vip/camera/img/frame0.img" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/alessandra.dolmeta/pqc_riscv/pulpissimo/rtl/vip/camera/cam_vip.sv(88)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/genblk2/i_cam_vip
+# ** Warning: (vsim-7) Failed to open readmem file "/../rtl/vip/camera/img/frame1.img" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/alessandra.dolmeta/pqc_riscv/pulpissimo/rtl/vip/camera/cam_vip.sv(89)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/genblk2/i_cam_vip
+# [cv32e40p_core]: PULP_XPULP =           1, PULP_CLUSTER =           0, FPU           1, PULP_ZFINX           0, NUM_MHPMCOUNTERS           1
+# [TB  ]       0ns - Asserting hard reset
+# [TB  ]       1ns - Using FLL
+# [TB  ]       1ns - Not using CAM SDVT
+# [TB  ]       1ns - Loading default stimuli
+# [TB  ]       1ns - Entry point is set to 0x1c008080
+# [JTAG]     701ns - Soft Reset Done
+# [JTAG]   33301ns - Bypass Test Passed
+# [JTAG]   43701ns - Tap ID: 50001db3
+# [JTAG]   43701ns - Tap ID Test PASSED
+# [TIF ]   50301ns - Init
+# [TB  ]   50301ns - Enabling clock out via jtag
+# [TB  ]   50301ns - jtag_conf_reg set to xxx
+# [TB  ]   50301ns - Releasing hard reset
+# [CORE_TRACER 992] Output filename is: trace_core_000003e0.log
+# [TB  ]   51901ns - Init PULP TAP
+# [PULP]   66001ns - WRITE32 burst @1c008080 for           4 bytes.
+# [TB  ]   66001ns - Write32 PULP TAP
+# [JTAG]  130501ns - R/W test of L2 succeeded
+# [TB  ]  176201ns - Halting the Core
+# [TB  ]  235001ns - Writing the boot address into dpc
+# [TB  ]  279101ns - Loading L2 via JTAG
+# [JTAG]  279101ns - Loading L2 with pulp tap jtag interface
+# [PULP] 1110801ns - WRITE32 burst @1c000000 for        1024 bytes.
+# [PULP] 1940901ns - WRITE32 burst @1c000400 for        1024 bytes.
+# [PULP] 2771001ns - WRITE32 burst @1c000800 for        1024 bytes.
+# [PULP] 3601101ns - WRITE32 burst @1c000c00 for        1024 bytes.
+# [PULP] 4431201ns - WRITE32 burst @1c001000 for        1024 bytes.
+# [PULP] 5261301ns - WRITE32 burst @1c001400 for        1024 bytes.
+# [PULP] 6091401ns - WRITE32 burst @1c001800 for        1024 bytes.
+# [PULP] 6921501ns - WRITE32 burst @1c001c00 for        1024 bytes.
+# [PULP] 7751601ns - WRITE32 burst @1c002000 for        1024 bytes.
+# [PULP] 8581701ns - WRITE32 burst @1c002400 for        1024 bytes.
+# [PULP] 9411801ns - WRITE32 burst @1c002800 for        1024 bytes.
+# [PULP] 10241901ns - WRITE32 burst @1c002c00 for        1024 bytes.
+# [PULP] 11072001ns - WRITE32 burst @1c003000 for        1024 bytes.
+# [PULP] 11902101ns - WRITE32 burst @1c003400 for        1024 bytes.
+# [PULP] 12732201ns - WRITE32 burst @1c003800 for        1024 bytes.
+# [PULP] 13562301ns - WRITE32 burst @1c003c00 for        1024 bytes.
+# [PULP] 14392401ns - WRITE32 burst @1c004000 for        1024 bytes.
+# [PULP] 15222501ns - WRITE32 burst @1c004400 for        1024 bytes.
+# [PULP] 16052601ns - WRITE32 burst @1c004800 for        1024 bytes.
+# [PULP] 16882701ns - WRITE32 burst @1c004c00 for        1024 bytes.
+# [PULP] 17712801ns - WRITE32 burst @1c005000 for        1024 bytes.
+# [PULP] 18542901ns - WRITE32 burst @1c005400 for        1024 bytes.
+# [PULP] 19373001ns - WRITE32 burst @1c005800 for        1024 bytes.
+# [PULP] 20203101ns - WRITE32 burst @1c005c00 for        1024 bytes.
+# [PULP] 21033201ns - WRITE32 burst @1c006000 for        1024 bytes.
+# [PULP] 21357701ns - WRITE32 burst @1c006400 for         392 bytes.
+# [PULP] 22187801ns - WRITE32 burst @1c008000 for        1024 bytes.
+# [PULP] 23017901ns - WRITE32 burst @1c008400 for        1024 bytes.
+# [PULP] 23848001ns - WRITE32 burst @1c008800 for        1024 bytes.
+# [PULP] 24678101ns - WRITE32 burst @1c008c00 for        1024 bytes.
+# [PULP] 25508201ns - WRITE32 burst @1c009000 for        1024 bytes.
+# [PULP] 26338301ns - WRITE32 burst @1c009400 for        1024 bytes.
+# [PULP] 27168401ns - WRITE32 burst @1c009800 for        1024 bytes.
+# [PULP] 27998501ns - WRITE32 burst @1c009c00 for        1024 bytes.
+# [PULP] 28828601ns - WRITE32 burst @1c00a000 for        1024 bytes.
+# [PULP] 29658701ns - WRITE32 burst @1c00a400 for        1024 bytes.
+# [PULP] 30488801ns - WRITE32 burst @1c00a800 for        1024 bytes.
+# [PULP] 31318901ns - WRITE32 burst @1c00ac00 for        1024 bytes.
+# [PULP] 32149001ns - WRITE32 burst @1c00b000 for        1024 bytes.
+# [PULP] 32979101ns - WRITE32 burst @1c00b400 for        1024 bytes.
+# [PULP] 33809201ns - WRITE32 burst @1c00b800 for        1024 bytes.
+# [PULP] 34639301ns - WRITE32 burst @1c00bc00 for        1024 bytes.
+# [PULP] 35469401ns - WRITE32 burst @1c00c000 for        1024 bytes.
+# [PULP] 36299501ns - WRITE32 burst @1c00c400 for        1024 bytes.
+# [PULP] 37129601ns - WRITE32 burst @1c00c800 for        1024 bytes.
+# [PULP] 37959701ns - WRITE32 burst @1c00cc00 for        1024 bytes.
+# [PULP] 38777001ns - WRITE32 burst @1c00d000 for        1008 bytes.
+# [TB  ] 38778601ns - Resuming the CORE
+# [TB  ] 38837401ns - retrying debug reg access
+# [TB  ] 38866701ns - retrying debug reg access
+# [TB  ] 38896001ns - retrying debug reg access
+# [TB  ] 38925301ns - retrying debug reg access
+# [TB  ] 38954601ns - retrying debug reg access
+# [TB  ] 38983901ns - retrying debug reg access
+# [TB  ] 39013201ns - retrying debug reg access
+# [TB  ] 39042501ns - retrying debug reg access
+# [TB  ] 39071801ns - retrying debug reg access
+# [TB  ] 39101101ns - retrying debug reg access
+# [TB  ] 39130401ns - retrying debug reg access
+# [TB  ] 39159701ns - retrying debug reg access
+# [TB  ] 39189001ns - retrying debug reg access
+# [TB  ] 39218301ns - retrying debug reg access
+# [TB  ] 39247601ns - retrying debug reg access
+# [TB  ] 39276901ns - retrying debug reg access
+# [TB  ] 39306201ns - retrying debug reg access
+# [TB  ] 39335501ns - retrying debug reg access
+# [TB  ] 39364801ns - retrying debug reg access
+# [TB  ] 39394101ns - retrying debug reg access
+# [TB  ] 39423401ns - retrying debug reg access
+# [TB  ] 39452701ns - retrying debug reg access
+# [TB  ] 39482001ns - retrying debug reg access
+# [TB  ] 39511301ns - retrying debug reg access
+# [STDOUT-CL31_PE0] pk:
+# [TB  ] 40070001ns - Waiting for end of computation
+# [STDOUT-CL31_PE0] 9779a4d1fc45ec261f048b9c9daa38c9ec228b6505e8905226b38486802059c2c5c89601560634cb1337b1315365144842bc405a292e683cafa4514526945c4dfb68ee2acdb8b79532836696d53125a045bdbb8a3bcc8123083d1e682c5bd7820c76c448351151474f69d601d7708dbb2c979d77527494b68520a8ff66c34162ca2aec8072a2a51ff259389648e75b95c16abe14604edbfabaf400b76a7a0f07db61dce19102f43b2d1060747b02c4425485341fd5d9bffaa7016061374963b985209c6b9a7db3f94958311d027900a3d8c44f8435b093a236a0509f1928df7719ce8c4e90228f4db87cb9e882f2712180238845d31eb906c60eb63e0ff55e84b867a91b79ae74a03ac00473c8c1b3e6aedcc37f1e69b8e136019bdb01c374a122e164c32584b2fbcf5e013a45127c893326b6860378cb5525a48b522b30132b7688214b69808dd19aa4ff033e16252016fc9479222424393e51db7115e38114e6893cdcc8ae1117a4316548010ab4629fb672148d031a6c601a6a4a661d872d8ef693750a115958716ab9263eb0516357102358cde5256464805ca8f59661751ad6a475a7ec78cb7319c3bbc544e1bb1185aaaeb751ba0b3923246e33f40a4ff4780b745362a218d169474d7208a9f7577228308af20f8d2403a27477cf53cff133a247d5c2b298bf21bac6dc44649e63afcef54ad3a07a74e447b36bacca295e053368ef7c146e1c28edb31b3777c941a7c27dc559437b0ff83c2910f827ef244d7726af2b9708654bcfb139a26844c6f4b79cd9e4747065a77596b927f96cbdbc7267ac9e32ac396f6c4ce739aa0aa60fccac178edab1e04688fe71a74201a99bc64b55f8cb89e11545e5275af48626ec667520ba8a7c88c2307e793455ef8780fae16412ea59e92406f595902dc21c612b142801cf31abc0475c7bde772d51c55a2dfc651bc5ab4143022813cc4c8cc6f52c8d27e3cd7851849a8c4343f0c7ed6c6cb9f765c5047e55bc48aad5b932128287f70939db753a61c0d7db1830c256288c1c85cc9bbce58366dac528c893d61b69850bcb82758e836936e1f8163861586482cad35b4db1437fad6980b66280b1652d72f52407a8015f85c29e75b2158933a4f5887db320b583cdcbca274eac21f8702879b8bc4afb62ba056d146512921554c765464d4c96bd3c9a9720187c3339d0593bc4bba59155469ff6b8688a5fc5fa6b46d4070668bd168c5f796492760940999927628236b2412968438d2cbc2a978abc097320291b0ed7e4631ec9bbe28ac63ab6860e976ac1552afc43897d6937a092432dc481a914c3a1273c43009e8ec523cb93ced9898f90905340ba6e01bc572d03a893fa21c4342d88dc3e77b33b1fc063dcdb689d8c4ffc840ce879cfb3471385512cc7c7591383b1fac89832bb1cb3324e6d2868918844cb20ca4df812b42824192a43380430a37a7f3ac41ed064cfe055157b91b5c0108fb7a613a0112af4d64e48f8a345328a99b7bf0c91cb037215b0177ad4c263e6d78f5958c848158e4fd2117c248e0cab3cf98c1e27868838f8428ba0562df6b61e8736e2b8b266607918e0ce2ce3af67c81fa5c2a4d2bc8e871825b702b3beca397b33a518dac8b1393d494a90900c01b55925857cbf8027051d36a4f141a4d2dc440341305e033cb50a074be459c76a339a9a52c447360dea2a5699ccea683a42430aa6fc9545c75c0492641af7a4e9267bcc384e55714cf49741eba3b69d6417a555475d3c021112b8b3588c63747b5ce2ccfee91297fa419f9c4298978fff0870d8a855b48899ca9bb47d836d62d2038cc3816f3a698bb3bbff78c7a015b0ea1960634292e1d50b03e1043a98ca9b27063e668b05e2c17d692d382b181365a818518ec747720337ca1868596af42a90fab1870373d74b8f6d42ac86b18bca3ab04764680cf2060c529abe5b8ef4474dc8cc47a8033ebd884d3e0a0f1a94420d8a3c9162b7af87a2c8a394647434f4a3bc2b477813ac82cf387185b587f7f68938eccddd6934d143ba17bb4a712566d2a55aaddb3323713667401b4a20b86c23bf1076439cb6b8c115389dba4e6f0c915be7602b9703b535070e4a5c5649a5d7080515026706b2604575cbd0687f2729a92a997d21ea7200c41ed8315275f4c7b72f9bc85c0a13b9d041586fd583feb12afd5a402dd33b43543f5fa4eb436c8d
+# [STDOUT-CL31_PE0] Encapsulation done!
+# [STDOUT-CL31_PE0] sendb:
+# [STDOUT-CL31_PE0] 356178262a886ef530c9dbdcf57edb11416bd1d688cab7954e0d714aec97d883589a475b186446904462ab24bff71e46136ed080445f574ff3e43c9590cb2ea31ab78abd99878ff32317a4577134f7bfe357e57cb9ddde79b89bdf9944a6b37fe0b94c45922003e4ebbd787839e830549dfcc09b1c8458e7fc9bcec204c487d0ce0a411f3efdc25f582e882a69dff455d91bf236e400e795b723a2e621d5c537542fff1ea480ed4a519c9c6c02de44ac29f12887bb9ae4822036b150cfd425d20bd5d83a6e8b0707fe362d3aecf494b889266484167e84ba7d7278bf8c92e8708b09cf347dce96f2195d83782cf2c90b26a9ee0d0965800245545f5b2b95681fad4af28007dcaabbcd10fc3411b7c0675622b1c268965f04ad087b968b7313b79c2e1de905f81fe1357c0948cacc34616afbb42e96bd955950c2e8807b048dc5db3bac52eace0827480e40257eee1bf91f357a2dcbbad364c94f007c297100d7676f5f49593899c8a9a048e824eb2da2d080c0be7d9bc1a7e668f8c7216c8d51f68f593056c26f81b6d8ab5aeb4a61826ffba6acacf13dc4a4f92d88605014df84d86dbe1bedae8689a8afdb9873d9c3deb8f2ccbbf375bac374dc387bf17ed89e544c2e8e79a39f9d14ae374f3e862c209f875ba7142e0f0316e4d1d0e0aa8464a8850fd196c0165e1424e84effd846d467351d40ea7a628d7135e5570e4c7fb76882191ca6e3ac6866b5e8712bce385b541a2dce0f5e94613ed4cdec3c5752a21471c89ed8fa1b2df2df6194707d5212410dae98cfe373d3bff38fb4140699eb9dbc63205937d69af6bb9ed3965084b18354e6c241563d7101fdc3f9a1106307af4c76e80a2eb41afcfa652ff5f38714e214a8b32cf30279906552820e33de0572177ed42c58208be2911f91a9946d673a6494cc2013bedc4814b8f33fc1f594edf414f28bc1855ea3bfe70d6a78bb3f99414163ded4612e17cddc0320f950b257d9fd3ecafafbcdf24ec67b72e7e4e8aa3c6fd7e77bd2da2645a0c3e5b93b221e8bc03a176392cb34472d1b73aafab25525f4a34c1d00d6d116e07da01477b72c4e3fcf8e55acb763a306b059439579732b54f983430bcbb888da1faed7b2de645dc65ba203c8f231d94f201862404b086c3c750fe5f30f66978628dd1080906fc4a56a0e6d0307fa6258d932679c02e6c723fcc4cb4dd2de1d5452f44ef38d6b1e615ae013a1e983a18303bd4eff5ac998a40892572003c867a019ecc493ff9ddb358e2fbb005f774f7c5dbdd8e1731b4070bb5bc8966430de9f71ef5544806de67bfc7ddd23347ecaed8bf53a4181018e631b5f808c28a73c649d44232691eaf43c905e04b41926b6d020bcbf114e8cbfc0f3ee32072d47eb9173ae6cf06f0c9ac4223957ce95cf9bedb9ce052632e977924e1ed3d2bdbc7452ef9705bf02a9bfd96338ae9da77393d30efd35f61bdc13193bebf6b4bdc9ece1846d751d0c1459bcbbb95708aa60eab6b33afc665fed46d9de7b9ff6f3e6064e4ebf2372c01ba38add6526d1ba4a6c77e665788033884089e6626d2bb07e4e4c77f7d467b69d0eb6f5dbee22fbf5ec4de71076e008b7e717ebf9fcb269dea669f0dc97863726e0aa60946a85d40d98f28d03a6eb733bf434ac7feb7b6192efdebf17b8e73e91a946a4cd6a7ef1280d866b6786c6bd98daf0ec697dd4ce3111ca76a1beafa37770d1cad2f168cfb622ca342c9a61b27c46ae27cae8517eec1a0268424cf186ab9840d1a9d7076536878728f1970bd2d05a1bc55349c89621939e443e80f611c719efa394cc7cf232d88ed92d77d68a13e6600f679edab767d687e45b3b3d78fc00bea738a12d02ca2f481ed1ad4a22b64e8c7fb9ebc771855255abb2c26908cf0644a2aaa622046e6a65eaaa82c1acb444a352d41a0be6333a2328bfaf952ce68c145f194092d00d987b7df091150727346a792f78f8ea0668c7e00cf8356ec7670a043b8f35a2a4976fb5dd411a128287d4cdf08320a791a9e2b75284e361141fd0423a0edbc744a7571f901f28dd29c27cf8713c59743e36b799cbe929c297252311b516fa9f92c6436f0ed4e17792d57d84be56f21b280d9d0a584e688ceab670a525bda1efd32fb01412f40e58b0f4c2398792afde334b92020467478e677c60d11d5c8e680e0205d583e09572822e71773146cce3c42c9f0473ae93
+# [STDOUT-CL31_PE0] key_b:
+# [STDOUT-CL31_PE0] 19c339fa0aea4e5966792aaceb13cf175ba06e4a95030eae9fbf10a62b7e460d
+# [TB  ] 80996101ns - Received status core: 0x00000000
+# ** Note: $stop    : /home/alessandra.dolmeta/pqc_riscv/pulpissimo/rtl/tb/tb_pulp.sv(776)
+#    Time: 80996101 ns  Iteration: 0  Instance: /tb_pulp
+# Break in Module tb_pulp at /home/alessandra.dolmeta/pqc_riscv/pulpissimo/rtl/tb/tb_pulp.sv line 776
+# Stopped at /home/alessandra.dolmeta/pqc_riscv/pulpissimo/rtl/tb/tb_pulp.sv line 776
+# End time: 16:15:29 on Jun 28,2023, Elapsed time: 0:08:21
+# Errors: 0, Warnings: 10
