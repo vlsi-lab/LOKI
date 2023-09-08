@@ -75,3 +75,8 @@ Each of them refers to a particular level of security in Kyber. Run:
 source setup_kyberXXX.sh
 ```
 And then select `keygen`, `enc` or `dec`, depending on which part of the algorithm you want to run. 
+Kyber512 is the default test. In the case you want to run Kyber768 or Kyber1024, you need to modify the following files:
+- `pulp-runtime/include/pulp.h`: selecting the proper header files;
+- `pulp-runtime/rules/pulpos/default_rules.mk`: modify kyberXXX properly;
+- `pulp-runtime/rules/pulpos/targets/pulpissimo.mk`: modify kyberXXX properly.
+  
