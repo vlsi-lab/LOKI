@@ -26,7 +26,7 @@ generated using [reggen tool](https://docs.opentitan.org/util/reggen/doc/).
 The high-speed Keccak core developed by Keccak teams is optimized according to our application (Figure - III ). It implements transformation
 rounds discussed in section 2. The size of the round constant generator is reduced from 64-bit to one-byte size, simplifying the computation in ι. The accelerator is simulated and tested using ModelSim, exploiting a dedicated driver
 
-![Image](https://github.com/vlsiale/pulpissimo_keccak/blob/main/loki.svg)
+![Image](https://github.com/vlsi-lab/LOKI/blob/main/loki.svg)
 
 ## Folder organization
 - **pulpissimo**: forked repository of the original pulpissimo folder. Please refer to [pulpissimo GitHub Pages](https://github.com/pulp-platform/pulpissimo) for further information. 
