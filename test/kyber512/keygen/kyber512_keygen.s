@@ -1,6 +1,6 @@
-riscv32-unknown-elf-objdump  -d /home/alessandra.dolmeta/pqc_riscv/test/kyber512/keygen/build/keygen/keygen
+riscv32-unknown-elf-objdump  -d /home/alessandra.dolmeta/LOKI/test/kyber512/keygen/build/keygen/keygen
 
-/home/alessandra.dolmeta/pqc_riscv/test/kyber512/keygen/build/keygen/keygen:     file format elf32-littleriscv
+/home/alessandra.dolmeta/LOKI/test/kyber512/keygen/build/keygen/keygen:     file format elf32-littleriscv
 
 
 Disassembly of section .vectors:

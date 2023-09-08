@@ -18,7 +18,6 @@ fi
 source /eda/scripts/init_questa
 export PULP_RISCV_GCC_TOOLCHAIN=/software/riscv/riscv32-pulp
 export PATH=$PULP_RISCV_GCC_TOOLCHAIN/bin:$PATH
-export VSIM_PATH=$HOME/pqc_riscv
 
 source pulp-runtime/configs/pulpissimo.sh
 
