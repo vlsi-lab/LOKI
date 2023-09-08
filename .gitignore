@@ -3,8 +3,6 @@
 *.log
 
 #ignore all the build-folder, since contains very large files for complex algorithm
-test/keccak_ip/build/
-test/keccak/build/
 test/kyber768/keygen/build/
 test/kyber768/enc/build/
 test/kyber768/dec/build/
@@ -14,3 +12,13 @@ test/kyber512/dec/build/
 test/kyber1024/keygen/build/
 test/kyber1024/enc/build/
 test/kyber1024/dec/build/
+
+test/kyber768/keygen/gcc_sim/
+test/kyber768/enc/gcc_sim/
+test/kyber768/dec/gcc_sim/
+test/kyber512/keygen/gcc_sim/
+test/kyber512/enc/gcc_sim/
+test/kyber512/dec/gcc_sim/
+test/kyber1024/keygen/gcc_sim/
+test/kyber1024/enc/gcc_sim/
+test/kyber1024/dec/gcc_sim/

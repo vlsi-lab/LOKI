@@ -15,10 +15,9 @@ then
 fi
 
 
-source /eda/scripts/init_questa
-export PULP_RISCV_GCC_TOOLCHAIN=/software/riscv/riscv32-pulp
+source $QUESTA_PATH
+export PULP_RISCV_GCC_TOOLCHAIN=$RISCV_PATH
 export PATH=$PULP_RISCV_GCC_TOOLCHAIN/bin:$PATH
-export VSIM_PATH=$HOME/pqc_riscv
 
 source pulp-runtime/configs/pulpissimo.sh
 
@@ -33,7 +32,6 @@ make clean build
 cd ../test/kyber1024/$folder
 make clean all
 make dis > kyber1024_$folder.s
-#make -f Makefile run gui=1
 make -f Makefile run
 
 
