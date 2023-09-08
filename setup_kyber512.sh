@@ -26,7 +26,7 @@ cd pulpissimo
 make checkout
 source setup/vsim.sh
 env | grep VSIM
-make clean build  > log.txt
+make clean build 
 
 
 
