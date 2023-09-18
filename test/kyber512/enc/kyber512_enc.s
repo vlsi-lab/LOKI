@@ -1,6 +1,6 @@
-riscv32-unknown-elf-objdump  -d /home/alessandra.dolmeta/pqc_riscv/test/kyber512/enc/build/enc/enc
+riscv32-unknown-elf-objdump  -d /home/alessandra.dolmeta/LOKI/test/kyber512/enc/build/enc/enc
 
-/home/alessandra.dolmeta/pqc_riscv/test/kyber512/enc/build/enc/enc:     file format elf32-littleriscv
+/home/alessandra.dolmeta/LOKI/test/kyber512/enc/build/enc/enc:     file format elf32-littleriscv
 
 
 Disassembly of section .vectors:

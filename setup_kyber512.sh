@@ -15,8 +15,9 @@ then
 fi
 
 
-source $QUESTA_PATH
-export PULP_RISCV_GCC_TOOLCHAIN=$RISCV_PATH
+
+source /eda/scripts/init_questa
+export PULP_RISCV_GCC_TOOLCHAIN=/software/riscv/riscv32-pulp
 export PATH=$PULP_RISCV_GCC_TOOLCHAIN/bin:$PATH
 
 source pulp-runtime/configs/pulpissimo.sh
