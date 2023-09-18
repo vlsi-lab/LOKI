@@ -79,4 +79,14 @@ Kyber512 is the default test. In the case you want to run Kyber768 or Kyber1024,
 - `pulp-runtime/include/pulp.h`: selecting the proper header files;
 - `pulp-runtime/rules/pulpos/default_rules.mk`: modify kyberXXX properly;
 - `pulp-runtime/rules/pulpos/targets/pulpissimo.mk`: modify kyberXXX properly.
+
+
+<!-- LICENSE -->
+## License
+Distributed under the MIT License.
+See `LICENSE.txt` for more information.
+
+<!-- CONTACT -->
+## Contact
+Alessandra Dolmeta - [linkedin](https://www.linkedin.com/in/alessandra-dolmeta-4884301a3/) - alessandra.dolmeta@polito.it
   
