@@ -9,10 +9,7 @@ By leveraging the accelerator, the performance can be enhanced, contributing to 
 In the **LOKI** repository you can find an example of a post-quantum cryptographic (PQC) hardware accelerator for PULPissimo. 
 If you are using this accelerator, please refer to:
 
-> Alessandra Dolmeta, Mattia Mirigaldi, Maurizio Martina, and Guido Masera. 2023. Implementation and integration of Keccak accelerator on RISC-V for CRYSTALS-Kyber. In Proceedings of the 20th ACM International Conference on Computing Frontiers (CF '23). Association for Computing Machinery, New York, NY, USA, 381–382. https://doi.org/10.1145/3587135.3591432
-
-Or:
-> Alessandra Dolmeta, Mattia Mirigaldi, Maurizio Martina, and Guido Masera. 2023. LOKI Low-latency Open-source Kyber-accelerator IPs. 
+> Dolmeta, A., Mirigaldi, M., Martina, M., Masera, G. (2024). LOKI Low-Latency Open-Source Kyber-Accelerator IPs. In: Bellotti, F., et al. Applications in Electronics Pervading Industry, Environment and Society. ApplePies 2023. Lecture Notes in Electrical Engineering, vol 1110. Springer, Cham. https://doi.org/10.1007/978-3-031-48121-5_4
 
 Which still needs to be published, but has been accepted to ApplePies2023 (International Conference on Applications in Electronics Pervading Industry, Environment and Society).
 
